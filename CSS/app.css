@@ -1,0 +1,148 @@
+@font-face {
+    font-family: "Poppins";
+    src: url(../fonts/Poppins-Regular.ttf)format("truetype");
+}
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-image: linear-gradient(315deg, #fff 0, #d7e1ec 74%);
+    background-color: #c4b7b7;
+    font-family: "Poppins";
+    font-size: 1.6rem;
+    line-height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+}
+
+.social-media {}
+
+.social-media__link {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 200ms ease-in;
+    -webkit-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    -ms-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    position: relative;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.social-media__icon {
+    font-size: 2.5rem;
+    color: #000;
+}
+
+.social-media__tooltip {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 7px;
+    width: 10rem;
+    height: 4rem;
+    line-height: 4rem;
+    border-radius: 3rem;
+    -webkit-border-radius: 3rem;
+    -moz-border-radius: 3rem;
+    -ms-border-radius: 3rem;
+    -o-border-radius: 3rem;
+    background-color: rgb(119, 119, 241);
+    color: #fff;
+    text-align: center;
+    transition: all 200ms ease;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.social-media__tooltip::before {
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    background-color: rgb(119, 119, 241);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    -webkit-transform: translateX(-50%) rotate(45deg);
+    -moz-transform: translateX(-50%) rotate(45deg);
+    -ms-transform: translateX(-50%) rotate(45deg);
+    -o-transform: translateX(-50%) rotate(45deg);
+    bottom: -5px;
+    transition: all 200ms ease;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+}
+
+.social-media__link:hover:first-child,
+.social-media__link:hover:first-child .social-media__tooltip,
+.social-media__link:hover:first-child .social-media__tooltip::before {
+    background-color: #3B5999;
+}
+
+.social-media__link:hover:nth-child(2),
+.social-media__link:hover:nth-child(2) .social-media__tooltip,
+.social-media__link:hover:nth-child(2) .social-media__tooltip::before {
+    background-color: #46c1f6;
+}
+
+.social-media__link:hover:nth-child(3),
+.social-media__link:hover:nth-child(3) .social-media__tooltip,
+.social-media__link:hover:nth-child(3) .social-media__tooltip::before {
+    background-color: #e1306c;
+}
+
+.social-media__link:hover:nth-child(4),
+.social-media__link:hover:nth-child(4) .social-media__tooltip,
+.social-media__link:hover:nth-child(4) .social-media__tooltip::before {
+    background-color: #333;
+}
+
+.social-media__link:hover:last-child,
+.social-media__link:hover:last-child .social-media__tooltip,
+.social-media__link:hover:last-child .social-media__tooltip::before {
+    background-color: #de463b;
+}
+
+.social-media__link:hover .social-media__icon {
+    color: #fff;
+}
+
+.social-media__link:hover .social-media__tooltip {
+    opacity: 1;
+    top: -52px;
+    pointer-events: visible;
+}
